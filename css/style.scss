@@ -34,6 +34,9 @@ $light-green: #169421;
 .font-size-24 {
   font-size: 24px !important;
 }
+.font-size-26 {
+  font-size: 26px !important;
+}
 .font-size-30 {
   font-size: 30px !important;
 }
@@ -288,6 +291,7 @@ nav.custom-nav {
   .card {
     background-color: transparent;
     .card-header {
+      cursor: pointer;
       background: transparent;
       padding: 1.5rem;
     }
@@ -343,13 +347,16 @@ footer {
 // media quries
 @media only screen and (max-width: 640px) {
   .font-size-22 {
-    font-size: 18px !important;
+    font-size: 20px !important;
   }
   .font-size-24 {
     font-size: 16px !important;
   }
   .font-size-30 {
     font-size: 18px !important;
+  }
+  .font-size-32 {
+    font-size: 22px !important;
   }
   .font-size-36 {
     font-size: 24px !important;
@@ -379,6 +386,9 @@ footer {
       }
     }
   }
+  .border-bg .bg-header-wrap{
+    background: url(../imgs/mobile-hdr-bg.png) no-repeat right bottom;
+  }
   .header-wrap .using-native-wrap {
     padding-top: 65px;
   }
@@ -403,6 +413,12 @@ footer {
       .pt-6 {
         padding-top: 0rem !important;
       }
+    }
+  }
+
+  .green-card {
+    span {
+      line-height: 25px;
     }
   }
   
