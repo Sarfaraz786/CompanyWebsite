@@ -280,7 +280,37 @@ nav.custom-nav {
         border-radius: 100%;
       }
     }
-  } 
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    a {
+      color: black;
+      float: left;
+      padding: 3px 13px;
+      text-decoration: none;
+      &.active {
+        background-color: $primary-color;
+        color: white;
+        border-radius: 5px;
+      }
+      &:hover:not(.active) {
+        background-color: #ddd;
+        border-radius: 5px;
+      }
+      img {
+        vertical-align: sub;
+      }
+    }
+    
+  }
+  
+  
+  
+  
+  
+  
 
 
 // faq
@@ -293,7 +323,10 @@ nav.custom-nav {
     .card-header {
       cursor: pointer;
       background: transparent;
-      padding: 1.5rem;
+      padding: 1.5rem 2rem;
+    }
+    .card-body {
+      padding: 1.25rem 2rem;
     }
   }
   .cross-icon {
