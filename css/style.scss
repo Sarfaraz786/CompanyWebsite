@@ -43,6 +43,9 @@ $light-green: #169421;
 .font-size-32 {
   font-size: 32px !important;
 }
+.font-size-34 {
+  font-size: 34px !important;
+}
 .font-size-36 {
   font-size: 36px !important;
 }
@@ -105,6 +108,7 @@ a {
     background: linear-gradient(90deg, #195E1F 0%, #1A7922 100%);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
+    letter-spacing: 0.9px;
     &:hover {
       color: $primary-color;
       background: transparent;
@@ -135,6 +139,7 @@ nav.custom-nav {
         color: $primary-color;
         font-weight: bold;
         font-size: 14px;
+        letter-spacing: 0.1em;
       }
     }
   }
@@ -159,11 +164,6 @@ nav.custom-nav {
         }
       }
       
-      // .text-only {
-      //   margin-bottom: 4rem;
-        
-      // }
-      
     }
     .mobile-first {
       position: absolute;
@@ -180,6 +180,22 @@ nav.custom-nav {
   }
   .using-native-wrap {
     padding-top: 180px;
+    
+  }
+}
+.native-box {
+  padding: 1.5rem;
+  transition: all linear 0.5s;
+  &:hover {
+    background: #ffffff;
+    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+  .text {
+    padding-top: 1rem;
+    .primary-color {
+      padding-bottom: 0.5rem;
+    }
   }
 }
 .middle-wrap {
@@ -223,6 +239,15 @@ nav.custom-nav {
   }
   .all-card {
     padding-top: 7rem;
+  } 
+}
+.organizaiton-wrap {
+  .native-box {
+    .card-img {
+      width: 100%;
+      max-width: 180px;
+      margin: auto;
+    }
   }
 }
 
@@ -327,6 +352,7 @@ nav.custom-nav {
     }
     .card-body {
       padding: 1.25rem 2rem;
+      background: #ffffff;
     }
   }
   .cross-icon {
@@ -337,7 +363,7 @@ nav.custom-nav {
 }
 .accordion .card-header:after {
   font-family: 'FontAwesome';  
-  content: "\f067";
+  content: "\f00d";
   font-size: 26px;
   float: right; 
 }
@@ -361,6 +387,11 @@ section {
 footer {
   .row {
     padding: 1rem 0;
+    nav {
+      a {
+        letter-spacing: 0.1em;
+      }
+    }
   }
   .social-icon {
     .icon {
@@ -388,7 +419,7 @@ footer {
   .font-size-30 {
     font-size: 18px !important;
   }
-  .font-size-32 {
+  .font-size-32, .font-size-34 {
     font-size: 22px !important;
   }
   .font-size-36 {
