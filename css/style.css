@@ -92,6 +92,11 @@
   border-radius: 12px;
 }
 
+.box-shadow {
+  -webkit-box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
+}
+
 .yellow-border {
   width: 80px;
   height: 4px;
@@ -235,8 +240,8 @@ nav.custom-nav ul li a {
 
 .middle-wrap {
   background: url(../imgs/hom-middle-bg.svg) no-repeat;
-  background-size: 92% 90%;
-  background-position: bottom right;
+  background-size: contain;
+  background-position: right bottom;
 }
 
 .middle-wrap .earn-money {
@@ -255,26 +260,37 @@ nav.custom-nav ul li a {
   left: 30px;
 }
 
+@media (min-width: 768px) {
+  .card-deck > .card {
+    width: 29%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+  }
+}
+
+.component-blog {
+  margin-bottom: 4rem;
+}
+
 .component-blog .customers-bg {
-  background: url(../imgs/customer.svg) no-repeat;
+  background: url(../imgs/customer.png) no-repeat;
   background-size: inherit;
   background-position: right top;
 }
 
 .component-blog .economy-bg {
-  background: url(../imgs/economy-growth.svg) no-repeat;
+  background: url(../imgs/economy-growth.png) no-repeat;
   background-size: inherit;
   background-position: right top;
 }
 
 .component-blog .social-team {
-  background: url(../imgs/social-team.svg) no-repeat;
+  background: url(../imgs/social-team.png) no-repeat;
   background-size: inherit;
   background-position: right top;
-}
-
-.component-blog .all-card {
-  padding-top: 7rem;
 }
 
 .organizaiton-wrap .native-box .card-img {
@@ -294,12 +310,13 @@ nav.custom-nav ul li a {
   background-size: 78% 166%;
 }
 
-.blog-wrap section .card.b-radius {
-  border-radius: 20px;
+.blog-wrap section .card {
+  border-color: #195E1F;
+  border-radius: 0;
 }
 
-.blog-wrap section .card.b-radius .b-radius {
-  border-radius: 20px 20px 0 0;
+.blog-wrap section .card .card-body {
+  border-top: 1px solid #195E1F;
 }
 
 .blog-wrap section .header-img {
@@ -414,8 +431,16 @@ nav.custom-nav ul li a {
   background-color: #e5e5e5;
 }
 
+section .contact-form {
+  margin-bottom: 2.5rem;
+}
+
 section .contact-form .form-control {
   background-color: #e5e5e5;
+}
+
+section .contact-social .card-deck .card {
+  border-radius: 20px;
 }
 
 footer .row {
