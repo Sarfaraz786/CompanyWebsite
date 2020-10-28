@@ -78,12 +78,12 @@ $light-green: #169421;
  .box-shadow {
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.1);
  }
- .yellow-border {
-    width: 80px;
-    height: 4px;
-    margin: auto;
-    background: #F3CF10;
- }
+.yellow-border {
+  width: 80px;
+  height: 4px;
+  margin: auto;
+  background: #F3CF10;
+}
 .component-shadow {
   background: #ffffff;
   box-shadow: 0px 3px 6px #00000029;
@@ -94,7 +94,16 @@ $light-green: #169421;
 .caveat-font {
   font-family: 'Caveat', cursive;
 }
-
+.w-240 {
+  max-width: 240px;
+}
+.g-border {
+  border: 2.5px solid #195E1F;
+  box-shadow: 1px 5px 4px rgba(255, 242, 125, 0.7);
+}
+.line-height-1 {
+  line-height: 1;
+}
 html, body {
   font-family: 'Manrope', sans-serif;
 }
@@ -105,9 +114,9 @@ a {
     color: $primary-color;
   }
 }
-.btn-success, .btn-success {
+.btn-success {
   &.sbtn {
-    border: 1px solid $primary-color;
+    border: 2.5px solid $primary-color;
     background: linear-gradient(90deg, #195E1F 0%, #1A7922 100%);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
@@ -123,6 +132,27 @@ a {
       color: #fff;
       background-color: $primary-color;
       border-color: $primary-color;
+    }
+  }
+}
+.btn-outline-success {
+  &.sbtn {
+    border: 3px solid #1A7722;
+    border-radius: 10px;
+    letter-spacing: 0.9px;
+    color: #1A7722;
+    &:hover {
+      color: $primary-color;
+      background: transparent;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+    &:not(:disabled):not(.disabled):active {
+      color: #fff;
+      background: linear-gradient(90deg, #195E1F 0%, #1A7922 100%);
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+      border-color:  #1A7722;
     }
   }
 }
@@ -181,17 +211,27 @@ nav.custom-nav {
       z-index: 1;
     }
   }
-  .using-native-wrap {
-    padding-top: 180px;
+  // .using-native-wrap {
+  //   padding-top: 180px;
     
+  // }
+}
+
+.native-box {
+  .img-wrap {
+    width: 200px;
+    height: 165px;
+    text-align: center;
+    margin: auto;
   }
 }
+
 .native-box {
   padding: 1.5rem;
   transition: all linear 0.5s;
   &:hover {
-    background: #ffffff;
-    box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.05);
+    background: #FFFFFF;
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
   }
   .text {
@@ -215,7 +255,7 @@ nav.custom-nav {
     top: -30px;
     .reward-col {
       position: relative;
-      top: -45px;
+      top: -15px;
       left: 30px;
     }
   }
@@ -224,7 +264,7 @@ nav.custom-nav {
 // Use Cases
 @media (min-width:768px) {
   .card-deck > .card {
-      width: 29%;
+      width: 30%;
       flex-wrap: wrap;
       flex: initial; 
   }
@@ -247,20 +287,7 @@ nav.custom-nav {
     background-size: inherit;
     background-position: right top;
   }
-  .all-card {
-    // padding-top: 7rem;
-  } 
 }
-.organizaiton-wrap {
-  .native-box {
-    .card-img {
-      width: 100%;
-      max-width: 180px;
-      margin: auto;
-    }
-  }
-}
-
 .border-bg {
   background: #E5E5E5;
   .bg-header-wrap {
@@ -275,14 +302,12 @@ nav.custom-nav {
 .blog-wrap {
   section {
     .card{
-      border-color: $primary-color;
+      border: 3px solid #195E1F;
+      box-sizing: border-box;
+      box-shadow: 2px 3px 6px 1px rgba(255, 242, 125, 0.6);
       border-radius: 0;
-      // border-radius: 20px;
-      // .b-radius {
-      //   border-radius: 20px 20px 0 0;
-      // }
       .card-body {
-        border-top: 1px solid $primary-color;
+        border-top: 3px solid #195E1F;
       }
     }
     .header-img {
@@ -346,12 +371,6 @@ nav.custom-nav {
     
   }
   
-  
-  
-  
-  
-  
-
 
 // faq
 .faq-container {
@@ -391,20 +410,47 @@ nav.custom-nav {
 .form-control {
   background-color: #e5e5e5;
 }
-section {
-  .contact-form {
-    margin-bottom: 2.5rem;
-    .form-control {
-      background-color: #e5e5e5;
-    } 
+section.contact-sec {
+  background: url(../imgs/contact-bg.svg) no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+  .form-wrap {
+    .card {
+      margin-bottom: 2.5rem;
+      border: 3px solid #195E1F;
+      box-shadow: 2px 3px 6px 1px rgba(255, 242, 125, 0.6);
+      border-radius: 20px;
+      .card-body {
+        padding: 2rem;
+        .form-control {
+          background: rgba(26, 119, 34, 0.1);
+          border: 1.5px solid #195E1F;
+          border-radius: 10px;
+        } 
+      }
+      
+    }
   }
+  
   .contact-social {
     .card-deck {
       .card {
+        border: 3px solid #195E1F;
+        box-shadow: 2px 3px 6px 1px rgba(255, 242, 125, 0.6);
         border-radius: 20px;
       }
     }
     
+  }
+}
+
+//subscribe
+.subscribe {
+  .input-group {
+    input {
+      background: rgba(25, 94, 31, 0.1);
+      border: 3px solid #195E1F;
+    }
   }
 }
 
@@ -464,6 +510,14 @@ footer {
   }
   .mb-sm-3, .my-sm-3 {
     margin-bottom: 1rem!important;
+  }
+  .ntv-jumbotron {
+    .header-text {
+      .sbtn {
+        font-size: 17px !important;
+      }
+    }
+    
   }
   nav.custom-nav {
     ul {
