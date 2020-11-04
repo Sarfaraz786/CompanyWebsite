@@ -484,11 +484,23 @@ footer {
 
 // media quries
 @media only screen and (max-width: 640px) {
+  .home-pg {
+    .small-header {
+      .caveat-font {
+        font-size: 27px !important;
+      }
+    }
+  }
+  .small-header {
+    .caveat-font {
+      font-size: 23px !important;
+    }
+  }
   .font-size-22 {
     font-size: 20px !important;
   }
   .font-size-24 {
-    font-size: 16px !important;
+    font-size: 17px !important;
   }
   .font-size-30 {
     font-size: 18px !important;
@@ -512,6 +524,9 @@ footer {
   .pb-sm-3 {
     padding-bottom: 1rem!important;
   }
+  .pt-6 {
+    padding-top: 3rem !important;
+  }
   .py-6 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important;
@@ -528,19 +543,16 @@ footer {
     
   }
   nav.custom-nav {
-    ul {
-      li {
-        a {
-          // display: block;
-        }
-      }
+    .navbar-collapse {
+      background: #fff;
+      padding-bottom: 1.8rem;
     }
   }
   .border-bg .bg-header-wrap{
     background: url(../imgs/mobile-hdr-bg.png) no-repeat right bottom;
   }
   .header-wrap .using-native-wrap {
-    padding-top: 65px;
+    padding-top: 50px;
   }
   .middle-wrap .earn-money, .middle-wrap .second-row {
     top: 0;
