@@ -535,12 +535,18 @@ footer .copyright-wrap .copyright-text {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 736px) {
   .home-pg .small-header .caveat-font {
     font-size: 27px !important;
   }
   .small-header .caveat-font {
     font-size: 23px !important;
+  }
+  .header-text .small-header .stroke-img {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
   .font-size-22 {
     font-size: 20px !important;

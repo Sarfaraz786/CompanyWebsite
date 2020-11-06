@@ -212,10 +212,6 @@ nav.custom-nav {
       z-index: 1;
     }
   }
-  // .using-native-wrap {
-  //   padding-top: 180px;
-    
-  // }
 }
 
 .native-box {
@@ -483,7 +479,7 @@ footer {
 }
 
 // media quries
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 736px) {
   .home-pg {
     .small-header {
       .caveat-font {
@@ -494,6 +490,17 @@ footer {
   .small-header {
     .caveat-font {
       font-size: 23px !important;
+    }
+  }
+
+  .header-text {
+    .small-header {
+      .stroke-img {
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
     }
   }
   .font-size-22 {
